@@ -1,11 +1,11 @@
 ## usersテーブル
 
-| Column   | Options             |
-| -------- | ------------------- |
-| name     | (string型, NOT NULL) |
-| email    | (string型, NOT NULL) |
-| password | (string型, NOT NULL) |
-| birthday | (date型), NOT NULL   |
+| Column             | Options             |
+| ------------------ | ------------------- |
+| name               | (string型, NOT NULL) |
+| email              | (string型, NOT NULL) |
+| encrypted_password | (string型, NOT NULL) |
+| birthday           | (date型), NOT NULL   |
 
 ## itemsテーブル
 
