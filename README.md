@@ -14,15 +14,14 @@
 ### Association
 
 - has_many :items
-- has_many :comments
-- has_many :buyer
+- has_many :buyers
 
 ## itemsテーブル
 
 | Column      | Options                           |
 | ----------- | --------------------------------- |
 | item_name   | (string型, NOT NULL)              |
-| item_text   | (string型, NOT NULL)              |
+| item_text   | (text型, NOT NULL)                |
 | category_id | (integer型, NOT NULL)             |
 | status_id   | (integer型, NOT NULL)             |
 | postage_id  | (integer型, NOT NULL)             |
@@ -34,21 +33,8 @@
 ### Association
 
 - belongs_to :user
-- has_many :comments
 - has_one :buyer
 
-## commentsテーブル
-
-| Column | Options            |
-| ------ | ------------------ |
-| text   | (text型, NOT NULL) |
-| user   | (references型)     |
-| item   | (references型)     |
-
-### Association
-
-- belongs_to :item
-- belongs_to :user
 
 ## buyersテーブル
 | Column | Options                           |
@@ -67,7 +53,7 @@
 | Column           | Options                           |
 | ---------------- | --------------------------------- |
 | post_number      | (string型, NOT NULL)              |
-| prefecture_id    | (integer型, NOT NULL)             |
+| area_id          | (integer型, NOT NULL)             |
 | city             | (string型, NOT NULL)              |
 | number           | (string型, NOT NULL)              |
 | building_name    | (string型)                        |
