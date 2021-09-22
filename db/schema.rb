@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_09_08_144636) do
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "nicknamem", null: false
+    t.string "nickname", null: false
     t.string "first_name", null: false
     t.string "last_name", null: false
     t.string "first_name_kana", null: false
