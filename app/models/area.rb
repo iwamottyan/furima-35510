@@ -1,4 +1,4 @@
-class Area < ActivHash::Base
+class Area < ActiveHash::Base
   self.data = [
     { id: 1, name: '---' }, 
     { id: 2, name: '北海道' }, 
@@ -52,5 +52,5 @@ class Area < ActivHash::Base
 
   include ActiveHash::Associations
   has_many :items
-  
+
 end
