@@ -16,8 +16,8 @@ class Item < ApplicationRecord
   validates :item_text, presence: true
   validates :category_id, numericality: { other_than: 1 , message: "category can't be blank"}
   validates :status_id, numericality: { other_than: 1 , message: "status can't be blank"}
-  validates :postage, numericality: { other_than: 1 , message: "postage  can't be blank"}
-  validates :area, numericality: { other_than: 1 , message: "area can't be blank"}
-  validates :day, numericality: { other_than: 1 , message: "day can't be blank"}
+  validates :postage_id, numericality: { other_than: 1 , message: "postage  can't be blank"}
+  validates :area_id, numericality: { other_than: 1 , message: "area can't be blank"}
+  validates :day_id, numericality: { other_than: 1 , message: "day can't be blank"}
   validates :price, presence: true
 end

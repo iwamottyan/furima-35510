@@ -42,8 +42,10 @@ ActiveRecord::Schema.define(version: 2021_09_29_102313) do
     t.integer "area_id"
     t.integer "day_id"
     t.integer "price"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
