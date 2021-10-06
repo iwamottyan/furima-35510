@@ -26,7 +26,7 @@
 | status_id   | (integer型, NOT NULL)             |
 | postage_id  | (integer型, NOT NULL)             |
 | area_id     | (integer型, NOT NULL)             |
-| day_id      | (integer型, NOT NULL)             |
+| item_day_id | (integer型, NOT NULL)             |
 | price       | (integer型, NOT NULL)             |
 | user        | (references型, foreign_key: true) |
 
