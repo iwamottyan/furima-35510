@@ -7,9 +7,7 @@
     <h2 class="items-sell-title">商品の情報を入力</h2>
     <%= form_with model: @item, local: true do |f| %>
 
-    <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
     <%= render 'shared/error_messages', model: f.object %>
-    <%# //インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
 
     <%# 商品画像 %>
     <div class="img-upload">
@@ -31,7 +29,7 @@
         商品名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :item_name, class:"items-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+      <%= f.text_area :item_name, class:"items-text", id:"item-name", placeholder:"商品名（必須 40文字まで)" %>
       <div class="items-explain">
         <div class="weight-bold-text">
           商品の説明
@@ -81,7 +79,7 @@
           発送までの日数
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:day_id, Day.all, :id, :name, {}, {class:"select-box", id:"item-scheduled-delivery"}) %>
+        <%= f.collection_select(:item_day_id, ItemDay.all, :id, :name, {}, {class:"select-box", id:"item-scheduled-delivery"}) %>
       </div>
     </div>
     <%# /配送について %>
