@@ -36,7 +36,7 @@
 - has_one :buyer
 
 
-## buyersテーブル
+## ordersテーブル
 | Column | Options                           |
 | ------ | --------------------------------- |
 | user   | (references型, foreign_key: true) |
