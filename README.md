@@ -36,7 +36,7 @@
 - has_one :buyer
 
 
-## buyersテーブル
+## ordersテーブル
 | Column | Options                           |
 | ------ | --------------------------------- |
 | user   | (references型, foreign_key: true) |
@@ -58,7 +58,7 @@
 | number           | (string型, NOT NULL)              |
 | building_name    | (string型)                        |
 | telephone_number | (string型, NOT NULL)              |
-| buyer            | (references型, foreign_key: true) |
+| order            | (references型, foreign_key: true) |
 
 ## Association
 
